@@ -6,7 +6,7 @@ asciidoc:
   - '@springio/asciidoctor-extensions'
 site:
   url: http://localhost:5252
-  title: Spring
+  title: Documentation
   homeUrl: /index.html
   components:
   - name: foobar
