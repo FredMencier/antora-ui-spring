@@ -29,10 +29,12 @@
       <div class="navbar-end">
         <a class="navbar-item" href="{{{relativize '/index.html'}}}">Home</a>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">Java Version</a>
+          <a class="navbar-link" href="#">Products</a>
           <div class="navbar-dropdown">
             {{#each site.components}}
-              <a class="navbar-item" href="">{{title}}</a>
+              {{#if (ne name "entrance-doc")}}
+                <a class="navbar-item" href="{{{relativize url}}}">{{title}}</a>
+              {{/if}}
             {{/each}}
           </div>
         </div>
