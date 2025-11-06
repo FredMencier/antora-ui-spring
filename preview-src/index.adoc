@@ -1,3 +1,5 @@
 = Overview
 
 Antora UI Spring theme.
+
+card::Java 24[role=info, content="Nouveautés Java 24", xref=baz::index.adoc]
