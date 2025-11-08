@@ -1,11 +1,15 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="">
+      {{#each site.components}}
+        {{#if (eq name "entrance-doc")}}
+          <a class="navbar-item" href="{{{relativize url}}}">
+        {{/if}}
+      {{/each}}
         <img
           id="doclogo"
           class="block"
-          src="{{{uiRootPath}}}/img/document.png"
+          src="{{{uiRootPath}}}/img/java.svg"
           alt="Documentation"
         />
       </a>
@@ -26,7 +30,7 @@
       <div class="navbar-end">
         <a class="navbar-item" href="{{{relativize '/index.html'}}}">Home</a>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">Products</a>
+          <a class="navbar-link" href="#">Java Versions</a>
           <div class="navbar-dropdown">
             {{#each site.components}}
               {{#if (ne name "entrance-doc")}}

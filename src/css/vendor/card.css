@@ -134,6 +134,21 @@
   background-color: #6db33f;
 }
 
+.bandeau {
+  position: absolute;
+  top: 15px;
+  right: -45px;
+  width: 180px;
+  background: #ff3b3b;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 5px 0;
+  font-family: sans-serif;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .doc-card {
