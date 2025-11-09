@@ -6,8 +6,56 @@
 </p>
 
 
-## antora-ui-spring
+# antora-ui-spring
 
-This section offers a basic tutorial to teach you how to preview it locally, and bundle it for use with Antora.
-A more comprehensive tutorial can be found in the documentation at [docs.antora.org](https://docs.antora.org/).
+## Principe
 
+Ce projet est un fork du projet [antora-ui-spring](https://github.com/spring-io/antora-ui-spring). Il fourni une ui customisée pour la génération de documentation basée sur Antora.
+
+Vous trouver la documentation complète d'Antora sur le site [docs.antora.org](https://docs.antora.org/).
+
+Le système de templating utilisé par Antora est [Handlebars](https://handlebarsjs.com/)
+
+gulp permet de réaliser des taches répétitives (lint, minify, zip...). Vous trouvez plus d'info sur [Gulp](https://gulpjs.com/)
+
+Pour builder et tester le site en local vous pouvez utiliser les commandes :
+
+```shell
+npm install
+gulp preview
+```
+
+Le serveur local demarre avec le log :
+
+```log
+[12:00:00] Starting server...
+[12:00:00] Server started http://localhost:5252
+[12:00:00] Running server
+```
+
+## Packaging du bundle pour une utilisation avec Antora
+
+Pour packager la UI afin de générer le site vous pouvez utiliser la commande : 
+
+```shell
+gulp bundle
+```
+
+Fixez les erreurs qui apparaissent lors du processus de lint
+
+Lorsque la commande se termine sans erreurs, la UI est disponible au format zip dans le répertoire `build/ui-bundle.zip`
+
+Vous pouvez alors utiliser votre UI directement avec Antora :
+- en passant le zip dans la ligne de commande grace à l'option `--ui-bundle-url`
+- en pointant votre zip depuis le fichier `antora-playbook.yml`
+
+```yml
+ui:
+  bundle:
+    url: "https://github.com/FredMencier/antora-ui-spring/releases/download/1.0.0/ui-bundle.zip"
+    snapshot: true
+```
+
+## Les éléments personnalisés
+
+## Demo
