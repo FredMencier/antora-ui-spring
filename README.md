@@ -12,11 +12,11 @@
 
 Ce projet est un fork du projet [antora-ui-spring](https://github.com/spring-io/antora-ui-spring). Il fourni une ui customisée pour la génération de documentation basée sur Antora.
 
-Vous trouver la documentation complète d'Antora sur le site [docs.antora.org](https://docs.antora.org/).
+Vous trouvez la documentation complète d'Antora sur le site [docs.antora.org](https://docs.antora.org/).
 
 Le système de templating utilisé par Antora est [Handlebars](https://handlebarsjs.com/)
 
-gulp permet de réaliser des taches répétitives (lint, minify, zip...). Vous trouvez plus d'info sur [Gulp](https://gulpjs.com/)
+`gulp` permet de réaliser des taches répétitives (lint, minify, zip...). Vous trouvez plus d'info sur [Gulp](https://gulpjs.com/)
 
 Pour builder et tester le site en local vous pouvez utiliser les commandes :
 
@@ -57,5 +57,9 @@ ui:
 ```
 
 ## Les éléments personnalisés
+- Ajout d'un `card.css` permettant l'affichage d'une entrance page sous forme de card
 
 ## Demo
+
+La documentation contenu dans le projet `https://github.com/FredMencier/antora-sample` est un example d'utilisation de cette UI custom.
+Antora permet de générer le site associé
