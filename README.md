@@ -61,5 +61,6 @@ ui:
 
 ## Demo
 
-La documentation contenu dans le projet `https://github.com/FredMencier/antora-sample` est un example d'utilisation de cette UI custom.
+La documentation contenu dans le projet [antora-sample](https://github.com/FredMencier/antora-sample) est un example d'utilisation de cette UI custom.
+
 Antora permet de générer le site associé
