@@ -53,7 +53,6 @@ Vous pouvez alors utiliser votre UI directement avec Antora :
 ui:
   bundle:
     url: "https://github.com/FredMencier/antora-ui-spring/releases/download/1.0.0/ui-bundle.zip"
-    snapshot: true
 ```
 
 ## Les éléments personnalisés
