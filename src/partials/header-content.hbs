@@ -1,18 +1,14 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      {{#each site.components}}
-        {{#if (eq name "entrance-doc")}}
-          <a class="navbar-item" href="{{{relativize url}}}">
-        {{/if}}
-      {{/each}}
-        <img
-          id="doclogo"
-          class="block"
-          src="{{{uiRootPath}}}/img/java.svg"
-          alt="Documentation"
-        />
-      </a>
+      <div class="navbar-logo">
+            <a href="{{{relativize url}}}">
+            <img
+              src="{{{uiRootPath}}}/img/java.svg"
+              alt="Documentation"
+              style="width: 90px; height: 50px;"/>
+          </a>
+      </div>
     </div>
 
     <div class="navbar-brand">

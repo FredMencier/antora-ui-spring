@@ -134,6 +134,18 @@
   background-color: #6db33f;
 }
 
+.navbar-logo img {
+  content: url('../img/java.svg');
+  top: 15px;
+  left: 20px;
+}
+
+.dark-theme .navbar-logo img {
+  content: url('../img/java-dark.svg');
+  top: 15px;
+  left: 20px;
+}
+
 .bandeau {
   position: absolute;
   top: 15px;
